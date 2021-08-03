@@ -273,7 +273,7 @@ class AQ:
         print("------------------------------------------------------")
 
         option = int(input())
-        while not (option > 0 and option < 11):
+        while not (option > 0 and option < 9):
             print("wrong number")
             option = input()
         

@@ -99,7 +99,7 @@ class AcunetixManager(object):
 		else:
 			group_id = None
 
-		with open(targets_filename) as file:
+		with open(targets_filename, encoding='utf-8') as file:
 			hosts = [line.rstrip('\n') for line in file]
 		self.number_targets = len(hosts)
 		for chunk in self.chunks(hosts, self.N):
